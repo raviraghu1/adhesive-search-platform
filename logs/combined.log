@@ -1,0 +1,228 @@
+{"level":"info","message":"Starting PDS Adhesive Intelligent Search Platform...","timestamp":"2025-09-08 09:30:58"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2025-09-08 09:30:58"}
+{"cause":{"beforeHandshake":false,"errorLabelSet":{}},"errorLabelSet":{},"level":"error","message":"Failed to connect to MongoDB with native driver: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":null,"maxSetVersion":null,"servers":{"localhost:27017":{"$clusterTime":null,"address":"localhost:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":499789967,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"}},"setName":null,"stale":false,"type":"Unknown"},"stack":"MongoServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017\n    at Topology.selectServer (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/mongodb/lib/sdam/topology.js:327:38)\n    at async Topology._connect (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/mongodb/lib/sdam/topology.js:200:28)\n    at async Topology.connect (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/mongodb/lib/sdam/topology.js:152:13)\n    at async topologyConnect (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/mongodb/lib/mongo_client.js:259:17)\n    at async MongoClient._connect (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/mongodb/lib/mongo_client.js:272:13)\n    at async MongoClient.connect (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/mongodb/lib/mongo_client.js:197:13)\n    at async DatabaseConnection.connectNative (file:///Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/src/database/connection.js:56:7)\n    at async startServer (file:///Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/src/index.js:15:5)","timestamp":"2025-09-08 09:31:03"}
+{"level":"info","message":"Starting PDS Adhesive Intelligent Search Platform...","timestamp":"2025-09-08 09:38:20"}
+{"level":"info","message":"Connecting to MongoDB Atlas...","timestamp":"2025-09-08 09:38:20"}
+{"code":"ENOTFOUND","hostname":"_mongodb._tcp.cluster.mongodb.net","level":"error","message":"Failed to connect to MongoDB with Mongoose: querySrv ENOTFOUND _mongodb._tcp.cluster.mongodb.net","stack":"Error: querySrv ENOTFOUND _mongodb._tcp.cluster.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:294:17)","syscall":"querySrv","timestamp":"2025-09-08 09:38:20"}
+{"level":"info","message":"Starting PDS Adhesive Intelligent Search Platform...","timestamp":"2025-09-08 10:02:34"}
+{"level":"info","message":"Connecting to MongoDB Atlas...","timestamp":"2025-09-08 10:02:34"}
+{"level":"info","message":"Mongoose connected to MongoDB","timestamp":"2025-09-08 10:02:35"}
+{"level":"info","message":"Native MongoDB client connected","timestamp":"2025-09-08 10:02:35"}
+{"level":"info","message":"MongoDB Atlas connected successfully","timestamp":"2025-09-08 10:02:35"}
+{"level":"info","message":"Database connection test successful","timestamp":"2025-09-08 10:02:35"}
+{"level":"info","message":"Creating database indexes...","timestamp":"2025-09-08 10:02:35"}
+{"level":"info","message":"Database indexes created successfully","timestamp":"2025-09-08 10:02:36"}
+{"level":"info","message":"Initializing services...","timestamp":"2025-09-08 10:02:36"}
+{"level":"info","message":"Initializing Knowledge Base Service...","timestamp":"2025-09-08 10:02:36"}
+{"level":"info","message":"Knowledge Base indexes ensured","timestamp":"2025-09-08 10:02:36"}
+{"level":"info","message":"Knowledge Base Service initialized successfully","timestamp":"2025-09-08 10:02:36"}
+{"averageQuality":0,"level":"info","message":"Knowledge Base Statistics:","published":0,"timestamp":"2025-09-08 10:02:36","total":0,"types":[]}
+{"level":"info","message":"Initializing Improved Search Service...","timestamp":"2025-09-08 10:02:36"}
+{"level":"info","message":"Azure OpenAI client initialized","timestamp":"2025-09-08 10:02:36"}
+{"level":"info","message":"Improved Search Service initialized successfully","timestamp":"2025-09-08 10:02:36"}
+{"level":"info","message":"Services initialized successfully","timestamp":"2025-09-08 10:02:36"}
+{"collections":["AEDatabase","CustomerPreferences","KnowledgeBase","customer_preferences","knowledge_base","products"],"dataSize":0,"database":"PDSAdhesive","documents":0,"indexes":61,"level":"info","message":"Database statistics:","timestamp":"2025-09-08 10:02:36"}
+{"level":"info","message":"\n        ========================================\n        🚀 Server is running!\n        ========================================\n        📍 Environment: development\n        🌐 URL: http://localhost:3000\n        📚 API Docs: http://localhost:3000/docs\n        🔍 Knowledge Base: /api/kb/v1\n        🔎 Search API: /api/v1\n        ========================================\n      ","timestamp":"2025-09-08 10:02:36"}
+{"level":"info","message":"Starting PDS Adhesive Intelligent Search Platform...","timestamp":"2025-09-08 10:04:54"}
+{"level":"info","message":"Connecting to MongoDB Atlas...","timestamp":"2025-09-08 10:04:54"}
+{"level":"info","message":"Mongoose connected to MongoDB","timestamp":"2025-09-08 10:04:54"}
+{"level":"info","message":"Native MongoDB client connected","timestamp":"2025-09-08 10:04:54"}
+{"level":"info","message":"MongoDB Atlas connected successfully","timestamp":"2025-09-08 10:04:54"}
+{"level":"info","message":"Database connection test successful","timestamp":"2025-09-08 10:04:55"}
+{"level":"info","message":"Creating database indexes...","timestamp":"2025-09-08 10:04:55"}
+{"level":"info","message":"Database indexes created successfully","timestamp":"2025-09-08 10:04:55"}
+{"level":"info","message":"Initializing services...","timestamp":"2025-09-08 10:04:55"}
+{"level":"info","message":"Initializing Knowledge Base Service...","timestamp":"2025-09-08 10:04:55"}
+{"level":"info","message":"Knowledge Base indexes ensured","timestamp":"2025-09-08 10:04:55"}
+{"level":"info","message":"Knowledge Base Service initialized successfully","timestamp":"2025-09-08 10:04:55"}
+{"averageQuality":0,"level":"info","message":"Knowledge Base Statistics:","published":0,"timestamp":"2025-09-08 10:04:56","total":0,"types":[]}
+{"level":"info","message":"Initializing Improved Search Service...","timestamp":"2025-09-08 10:04:56"}
+{"level":"info","message":"Azure OpenAI client initialized","timestamp":"2025-09-08 10:04:56"}
+{"level":"info","message":"Improved Search Service initialized successfully","timestamp":"2025-09-08 10:04:56"}
+{"level":"info","message":"Services initialized successfully","timestamp":"2025-09-08 10:04:56"}
+{"collections":["AEDatabase","CustomerPreferences","KnowledgeBase","customer_preferences","knowledge_base","products"],"dataSize":0,"database":"PDSAdhesive","documents":0,"indexes":70,"level":"info","message":"Database statistics:","timestamp":"2025-09-08 10:04:56"}
+{"level":"info","message":"\n        ========================================\n        🚀 Server is running!\n        ========================================\n        📍 Environment: development\n        🌐 URL: http://localhost:3000\n        📚 API Docs: http://localhost:3000/docs\n        🔍 Knowledge Base: /api/kb/v1\n        🔎 Search API: /api/v1\n        ========================================\n      ","timestamp":"2025-09-08 10:04:56"}
+{"level":"error","message":"{\"message\":\"Not Found - /api/v1/health\",\"stack\":\"Error: Not Found - /api/v1/health\\n    at notFound (file:///Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/src/middleware/errorHandler.js:14:17)\\n    at Layer.handle [as handle_request] (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/layer.js:95:5)\\n    at trim_prefix (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:328:13)\\n    at /Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:286:9\\n    at Function.process_params (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:346:12)\\n    at next (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:280:10)\\n    at /Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:646:15\\n    at next (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:265:14)\\n    at Function.handle (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:175:3)\\n    at router (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:47:12)\",\"timestamp\":\"2025-09-08T14:05:19.587Z\",\"request\":{\"method\":\"GET\",\"url\":\"/api/v1/health\",\"ip\":\"::1\"}}","timestamp":"2025-09-08 10:05:19"}
+{"level":"error","message":"{\"message\":\"Not Found - /\",\"stack\":\"Error: Not Found - /\\n    at notFound (file:///Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/src/middleware/errorHandler.js:14:17)\\n    at Layer.handle [as handle_request] (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/layer.js:95:5)\\n    at trim_prefix (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:328:13)\\n    at /Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:286:9\\n    at Function.process_params (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:346:12)\\n    at next (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:280:10)\\n    at logger (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/morgan/index.js:144:5)\\n    at Layer.handle [as handle_request] (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/layer.js:95:5)\\n    at trim_prefix (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:328:13)\\n    at /Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:286:9\",\"timestamp\":\"2025-09-08T14:05:24.076Z\",\"request\":{\"method\":\"GET\",\"url\":\"/\",\"ip\":\"::1\"}}","timestamp":"2025-09-08 10:05:24"}
+{"level":"info","message":"Starting PDS Adhesive Intelligent Search Platform...","timestamp":"2025-09-08 10:07:13"}
+{"level":"info","message":"Connecting to MongoDB Atlas...","timestamp":"2025-09-08 10:07:13"}
+{"level":"info","message":"Mongoose connected to MongoDB","timestamp":"2025-09-08 10:07:14"}
+{"level":"info","message":"Native MongoDB client connected","timestamp":"2025-09-08 10:07:14"}
+{"level":"info","message":"MongoDB Atlas connected successfully","timestamp":"2025-09-08 10:07:14"}
+{"level":"info","message":"Database connection test successful","timestamp":"2025-09-08 10:07:14"}
+{"level":"info","message":"Creating database indexes...","timestamp":"2025-09-08 10:07:14"}
+{"level":"info","message":"Database indexes created successfully","timestamp":"2025-09-08 10:07:15"}
+{"level":"info","message":"Initializing services...","timestamp":"2025-09-08 10:07:15"}
+{"level":"info","message":"Initializing Knowledge Base Service...","timestamp":"2025-09-08 10:07:15"}
+{"level":"info","message":"Knowledge Base indexes ensured","timestamp":"2025-09-08 10:07:15"}
+{"level":"info","message":"Knowledge Base Service initialized successfully","timestamp":"2025-09-08 10:07:15"}
+{"averageQuality":0,"level":"info","message":"Knowledge Base Statistics:","published":0,"timestamp":"2025-09-08 10:07:16","total":0,"types":[]}
+{"level":"info","message":"Initializing Improved Search Service...","timestamp":"2025-09-08 10:07:16"}
+{"level":"info","message":"Azure OpenAI client initialized","timestamp":"2025-09-08 10:07:16"}
+{"level":"info","message":"Improved Search Service initialized successfully","timestamp":"2025-09-08 10:07:16"}
+{"level":"info","message":"Services initialized successfully","timestamp":"2025-09-08 10:07:16"}
+{"collections":["AEDatabase","CustomerPreferences","KnowledgeBase","customer_preferences","knowledge_base","products"],"dataSize":0,"database":"PDSAdhesive","documents":0,"indexes":70,"level":"info","message":"Database statistics:","timestamp":"2025-09-08 10:07:16"}
+{"level":"error","message":"Port 3000 is already in use","timestamp":"2025-09-08 10:07:16"}
+{"level":"info","message":"Building Knowledge Base...","timestamp":"2025-09-08 10:07:25"}
+{"level":"info","message":"Starting data extraction from source collections...","timestamp":"2025-09-08 10:07:25"}
+{"level":"info","message":"Found 0 products to process","timestamp":"2025-09-08 10:07:25"}
+{"level":"info","message":"Found 0 documents to process","timestamp":"2025-09-08 10:07:25"}
+{"level":"info","message":"Knowledge Base build complete. Processed: 0, Errors: 0","timestamp":"2025-09-08 10:07:25"}
+{"errors":0,"level":"info","message":"Knowledge base build completed:","processed":0,"timestamp":"2025-09-08 10:07:25","total":0}
+{"level":"error","message":"{\"message\":\"Not Found - /api/v1/products\",\"stack\":\"Error: Not Found - /api/v1/products\\n    at notFound (file:///Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/src/middleware/errorHandler.js:14:17)\\n    at Layer.handle [as handle_request] (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/layer.js:95:5)\\n    at trim_prefix (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:328:13)\\n    at /Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:286:9\\n    at Function.process_params (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:346:12)\\n    at next (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:280:10)\\n    at /Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:646:15\\n    at next (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:265:14)\\n    at Function.handle (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:175:3)\\n    at router (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:47:12)\",\"timestamp\":\"2025-09-08T14:07:42.824Z\",\"request\":{\"method\":\"GET\",\"url\":\"/api/v1/products\",\"ip\":\"::1\"}}","timestamp":"2025-09-08 10:07:42"}
+{"level":"info","message":{"duration":43,"query":"adhesive","resultsCount":0,"timestamp":"2025-09-08T14:07:49.890Z","type":"search"},"timestamp":"2025-09-08 10:07:49"}
+{"level":"info","message":"Building Knowledge Base...","timestamp":"2025-09-08 10:13:14"}
+{"level":"info","message":"Starting data extraction from source collections...","timestamp":"2025-09-08 10:13:14"}
+{"level":"info","message":"Found 5 products to process","timestamp":"2025-09-08 10:13:14"}
+{"level":"info","message":"Found 3 documents to process","timestamp":"2025-09-08 10:13:14"}
+{"level":"info","message":"Knowledge Base build complete. Processed: 5, Errors: 0","timestamp":"2025-09-08 10:13:14"}
+{"errors":0,"level":"info","message":"Knowledge base build completed:","processed":5,"timestamp":"2025-09-08 10:13:14","total":5}
+{"level":"info","message":"SIGTERM signal received: closing HTTP server","timestamp":"2025-09-08 10:20:34"}
+{"level":"info","message":"Starting PDS Adhesive Intelligent Search Platform...","timestamp":"2025-09-08 10:20:44"}
+{"level":"info","message":"Connecting to MongoDB Atlas...","timestamp":"2025-09-08 10:20:44"}
+{"level":"info","message":"Mongoose connected to MongoDB","timestamp":"2025-09-08 10:20:44"}
+{"level":"info","message":"Native MongoDB client connected","timestamp":"2025-09-08 10:20:45"}
+{"level":"info","message":"MongoDB Atlas connected successfully","timestamp":"2025-09-08 10:20:45"}
+{"level":"info","message":"Database connection test successful","timestamp":"2025-09-08 10:20:45"}
+{"level":"info","message":"Creating database indexes...","timestamp":"2025-09-08 10:20:45"}
+{"level":"info","message":"Database indexes created successfully","timestamp":"2025-09-08 10:20:46"}
+{"level":"info","message":"Initializing services...","timestamp":"2025-09-08 10:20:46"}
+{"level":"info","message":"Initializing Knowledge Base Service...","timestamp":"2025-09-08 10:20:46"}
+{"level":"info","message":"Knowledge Base indexes ensured","timestamp":"2025-09-08 10:20:46"}
+{"level":"info","message":"Knowledge Base Service initialized successfully","timestamp":"2025-09-08 10:20:46"}
+{"averageQuality":0,"level":"info","message":"Knowledge Base Statistics:","published":5,"timestamp":"2025-09-08 10:20:46","total":5,"types":[{"_id":"product_info","count":5}]}
+{"level":"info","message":"Initializing Improved Search Service...","timestamp":"2025-09-08 10:20:46"}
+{"level":"info","message":"Azure OpenAI client initialized","timestamp":"2025-09-08 10:20:46"}
+{"level":"info","message":"Improved Search Service initialized successfully","timestamp":"2025-09-08 10:20:46"}
+{"level":"info","message":"Services initialized successfully","timestamp":"2025-09-08 10:20:46"}
+{"collections":["AEDatabase","CustomerPreferences","DataChangeLog","KnowledgeBaseMetrics","system.buckets.KnowledgeBaseMetrics","AESearchDatabase","KnowledgeBase","customer_preferences","SearchMetrics","system.buckets.SearchMetrics","AdhesivePDSDocumentMaster","knowledge_base","system.views","products"],"dataSize":51503,"database":"PDSAdhesive","documents":24,"indexes":95,"level":"info","message":"Database statistics:","timestamp":"2025-09-08 10:20:46"}
+{"level":"info","message":"\n        ========================================\n        🚀 Server is running!\n        ========================================\n        📍 Environment: development\n        🌐 URL: http://localhost:3000\n        📚 API Docs: http://localhost:3000/docs\n        🔍 Knowledge Base: /api/kb/v1\n        🔎 Search API: /api/v1\n        ========================================\n      ","timestamp":"2025-09-08 10:20:46"}
+{"level":"info","message":"Building Knowledge Base...","timestamp":"2025-09-08 10:21:02"}
+{"level":"info","message":"Starting data extraction from source collections...","timestamp":"2025-09-08 10:21:02"}
+{"level":"info","message":"Found 5 products to process","timestamp":"2025-09-08 10:21:02"}
+{"level":"info","message":"Found 3 documents to process","timestamp":"2025-09-08 10:21:02"}
+{"level":"info","message":"Knowledge Base build complete. Processed: 5, Errors: 0","timestamp":"2025-09-08 10:21:02"}
+{"errors":0,"level":"info","message":"Knowledge base build completed:","processed":5,"timestamp":"2025-09-08 10:21:02","total":5}
+{"level":"info","message":"Starting PDS Adhesive Intelligent Search Platform...","timestamp":"2025-09-08 10:24:34"}
+{"level":"info","message":"Connecting to MongoDB Atlas...","timestamp":"2025-09-08 10:24:34"}
+{"level":"info","message":"Mongoose connected to MongoDB","timestamp":"2025-09-08 10:24:34"}
+{"level":"info","message":"Native MongoDB client connected","timestamp":"2025-09-08 10:24:35"}
+{"level":"info","message":"MongoDB Atlas connected successfully","timestamp":"2025-09-08 10:24:35"}
+{"level":"info","message":"Database connection test successful","timestamp":"2025-09-08 10:24:35"}
+{"level":"info","message":"Creating database indexes...","timestamp":"2025-09-08 10:24:35"}
+{"level":"info","message":"Database indexes created successfully","timestamp":"2025-09-08 10:24:35"}
+{"level":"info","message":"Initializing services...","timestamp":"2025-09-08 10:24:35"}
+{"level":"info","message":"Initializing Knowledge Base Service...","timestamp":"2025-09-08 10:24:35"}
+{"level":"info","message":"Knowledge Base indexes ensured","timestamp":"2025-09-08 10:24:35"}
+{"level":"info","message":"Knowledge Base Service initialized successfully","timestamp":"2025-09-08 10:24:35"}
+{"averageQuality":0,"level":"info","message":"Knowledge Base Statistics:","published":5,"timestamp":"2025-09-08 10:24:36","total":5,"types":[{"_id":"product_info","count":5}]}
+{"level":"info","message":"Initializing Improved Search Service...","timestamp":"2025-09-08 10:24:36"}
+{"level":"info","message":"Azure OpenAI client initialized","timestamp":"2025-09-08 10:24:36"}
+{"level":"info","message":"Improved Search Service initialized successfully","timestamp":"2025-09-08 10:24:36"}
+{"level":"info","message":"Services initialized successfully","timestamp":"2025-09-08 10:24:36"}
+{"collections":["AEDatabase","CustomerPreferences","DataChangeLog","KnowledgeBaseMetrics","system.buckets.KnowledgeBaseMetrics","AESearchDatabase","KnowledgeBase","customer_preferences","SearchMetrics","system.buckets.SearchMetrics","AdhesivePDSDocumentMaster","knowledge_base","system.views","products"],"dataSize":72568,"database":"PDSAdhesive","documents":34,"indexes":99,"level":"info","message":"Database statistics:","timestamp":"2025-09-08 10:24:36"}
+{"level":"error","message":"Port 3000 is already in use","timestamp":"2025-09-08 10:24:36"}
+{"level":"info","message":"SIGTERM signal received: closing HTTP server","timestamp":"2025-09-08 10:24:43"}
+{"level":"info","message":"Starting PDS Adhesive Intelligent Search Platform...","timestamp":"2025-09-08 10:24:56"}
+{"level":"info","message":"Connecting to MongoDB Atlas...","timestamp":"2025-09-08 10:24:56"}
+{"level":"info","message":"Mongoose connected to MongoDB","timestamp":"2025-09-08 10:24:57"}
+{"level":"info","message":"Native MongoDB client connected","timestamp":"2025-09-08 10:24:57"}
+{"level":"info","message":"MongoDB Atlas connected successfully","timestamp":"2025-09-08 10:24:57"}
+{"level":"info","message":"Database connection test successful","timestamp":"2025-09-08 10:24:57"}
+{"level":"info","message":"Creating database indexes...","timestamp":"2025-09-08 10:24:57"}
+{"level":"info","message":"Database indexes created successfully","timestamp":"2025-09-08 10:24:58"}
+{"level":"info","message":"Initializing services...","timestamp":"2025-09-08 10:24:58"}
+{"level":"info","message":"Initializing Knowledge Base Service...","timestamp":"2025-09-08 10:24:58"}
+{"level":"info","message":"Knowledge Base indexes ensured","timestamp":"2025-09-08 10:24:58"}
+{"level":"info","message":"Knowledge Base Service initialized successfully","timestamp":"2025-09-08 10:24:58"}
+{"averageQuality":0,"level":"info","message":"Knowledge Base Statistics:","published":5,"timestamp":"2025-09-08 10:24:58","total":5,"types":[{"_id":"product_info","count":5}]}
+{"level":"info","message":"Initializing Improved Search Service...","timestamp":"2025-09-08 10:24:58"}
+{"level":"info","message":"Azure OpenAI client initialized","timestamp":"2025-09-08 10:24:58"}
+{"level":"info","message":"Improved Search Service initialized successfully","timestamp":"2025-09-08 10:24:58"}
+{"level":"info","message":"Services initialized successfully","timestamp":"2025-09-08 10:24:58"}
+{"collections":["AEDatabase","CustomerPreferences","DataChangeLog","KnowledgeBaseMetrics","system.buckets.KnowledgeBaseMetrics","AESearchDatabase","KnowledgeBase","customer_preferences","SearchMetrics","system.buckets.SearchMetrics","AdhesivePDSDocumentMaster","knowledge_base","system.views","products"],"dataSize":72568,"database":"PDSAdhesive","documents":34,"indexes":99,"level":"info","message":"Database statistics:","timestamp":"2025-09-08 10:24:58"}
+{"level":"info","message":"\n        ========================================\n        🚀 Server is running!\n        ========================================\n        📍 Environment: development\n        🌐 URL: http://localhost:3000\n        📚 API Docs: http://localhost:3000/docs\n        🔍 Knowledge Base: /api/kb/v1\n        🔎 Search API: /api/v1\n        ========================================\n      ","timestamp":"2025-09-08 10:24:58"}
+{"level":"info","message":"SIGTERM signal received: closing HTTP server","timestamp":"2025-09-08 10:29:19"}
+{"level":"info","message":"Starting PDS Adhesive Intelligent Search Platform...","timestamp":"2025-09-08 10:29:52"}
+{"level":"info","message":"Connecting to MongoDB Atlas...","timestamp":"2025-09-08 10:29:52"}
+{"level":"info","message":"Mongoose connected to MongoDB","timestamp":"2025-09-08 10:29:53"}
+{"level":"info","message":"Native MongoDB client connected","timestamp":"2025-09-08 10:29:53"}
+{"level":"info","message":"MongoDB Atlas connected successfully","timestamp":"2025-09-08 10:29:53"}
+{"level":"info","message":"Database connection test successful","timestamp":"2025-09-08 10:29:53"}
+{"level":"info","message":"Creating database indexes...","timestamp":"2025-09-08 10:29:53"}
+{"level":"info","message":"Database indexes created successfully","timestamp":"2025-09-08 10:29:54"}
+{"level":"info","message":"Initializing services...","timestamp":"2025-09-08 10:29:54"}
+{"level":"info","message":"Initializing Knowledge Base Service...","timestamp":"2025-09-08 10:29:54"}
+{"level":"info","message":"Knowledge Base indexes ensured","timestamp":"2025-09-08 10:29:54"}
+{"level":"info","message":"Knowledge Base Service initialized successfully","timestamp":"2025-09-08 10:29:54"}
+{"averageQuality":0,"level":"info","message":"Knowledge Base Statistics:","published":0,"timestamp":"2025-09-08 10:29:54","total":0,"types":[]}
+{"level":"info","message":"Initializing Improved Search Service...","timestamp":"2025-09-08 10:29:54"}
+{"level":"info","message":"Azure OpenAI client initialized","timestamp":"2025-09-08 10:29:54"}
+{"level":"info","message":"Improved Search Service initialized successfully","timestamp":"2025-09-08 10:29:54"}
+{"level":"info","message":"Services initialized successfully","timestamp":"2025-09-08 10:29:54"}
+{"collections":["knowledge_base","KnowledgeBase","products","customer_preferences","AESearchDatabase","CustomerPreferences"],"dataSize":0,"database":"PDSAdhesiveSearch","documents":0,"indexes":60,"level":"info","message":"Database statistics:","timestamp":"2025-09-08 10:29:54"}
+{"level":"info","message":"\n        ========================================\n        🚀 Server is running!\n        ========================================\n        📍 Environment: development\n        🌐 URL: http://localhost:3000\n        📚 API Docs: http://localhost:3000/docs\n        🔍 Knowledge Base: /api/kb/v1\n        🔎 Search API: /api/v1\n        ========================================\n      ","timestamp":"2025-09-08 10:29:54"}
+{"level":"info","message":"Building Knowledge Base...","timestamp":"2025-09-08 10:30:15"}
+{"level":"info","message":"Starting data extraction from source collections...","timestamp":"2025-09-08 10:30:15"}
+{"level":"info","message":"Found 5 products to process","timestamp":"2025-09-08 10:30:15"}
+{"level":"info","message":"Found 3 documents to process","timestamp":"2025-09-08 10:30:15"}
+{"level":"info","message":"Knowledge Base build complete. Processed: 5, Errors: 0","timestamp":"2025-09-08 10:30:15"}
+{"errors":0,"level":"info","message":"Knowledge base build completed:","processed":5,"timestamp":"2025-09-08 10:30:15","total":5}
+{"level":"info","message":"Initializing Knowledge Base State Manager...","timestamp":"2025-09-08 11:04:16"}
+{"level":"error","message":"Failed to initialize KB State Manager: Cannot read properties of null (reading 'listCollections')","stack":"TypeError: Cannot read properties of null (reading 'listCollections')\n    at KnowledgeBaseStateManager.ensureCollections (file:///Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/src/services/KnowledgeBaseStateManager.js:46:34)\n    at KnowledgeBaseStateManager.initialize (file:///Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/src/services/KnowledgeBaseStateManager.js:28:18)\n    at KnowledgeBaseSearchTest.connect (file:///Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/scripts/test-kb-search.js:33:24)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async KnowledgeBaseSearchTest.runAllTests (file:///Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/scripts/test-kb-search.js:394:7)","timestamp":"2025-09-08 11:04:16"}
+{"level":"info","message":"Initializing Knowledge Base State Manager...","timestamp":"2025-09-08 11:05:43"}
+{"level":"error","message":"Failed to initialize KB State Manager: Cannot read properties of null (reading 'listCollections')","stack":"TypeError: Cannot read properties of null (reading 'listCollections')\n    at KnowledgeBaseStateManager.ensureCollections (file:///Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/src/services/KnowledgeBaseStateManager.js:46:34)\n    at KnowledgeBaseStateManager.initialize (file:///Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/src/services/KnowledgeBaseStateManager.js:28:18)\n    at KnowledgeBaseSearchTest.connect (file:///Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/scripts/test-kb-search.js:39:29)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async KnowledgeBaseSearchTest.runAllTests (file:///Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/scripts/test-kb-search.js:401:7)","timestamp":"2025-09-08 11:05:43"}
+{"level":"info","message":"Initializing Knowledge Base State Manager...","timestamp":"2025-09-08 11:06:32"}
+{"level":"warn","message":"MongoDB disconnected","timestamp":"2025-09-08 11:14:16"}
+{"level":"info","message":"MongoDB reconnected","timestamp":"2025-09-08 11:14:16"}
+{"level":"info","message":"SIGTERM signal received: closing HTTP server","timestamp":"2025-09-08 11:16:26"}
+{"level":"info","message":"Starting PDS Adhesive Intelligent Search Platform...","timestamp":"2025-09-08 11:16:28"}
+{"level":"info","message":"Connecting to MongoDB Atlas...","timestamp":"2025-09-08 11:16:28"}
+{"level":"info","message":"Mongoose connected to MongoDB","timestamp":"2025-09-08 11:16:29"}
+{"level":"info","message":"Native MongoDB client connected","timestamp":"2025-09-08 11:16:29"}
+{"level":"info","message":"MongoDB Atlas connected successfully","timestamp":"2025-09-08 11:16:29"}
+{"level":"info","message":"Database connection test successful","timestamp":"2025-09-08 11:16:29"}
+{"level":"info","message":"Creating database indexes...","timestamp":"2025-09-08 11:16:29"}
+{"level":"info","message":"Database indexes created successfully","timestamp":"2025-09-08 11:16:29"}
+{"level":"info","message":"Initializing services...","timestamp":"2025-09-08 11:16:29"}
+{"level":"info","message":"Initializing Knowledge Base Service...","timestamp":"2025-09-08 11:16:29"}
+{"level":"info","message":"Knowledge Base indexes ensured","timestamp":"2025-09-08 11:16:30"}
+{"level":"info","message":"Knowledge Base Service initialized successfully","timestamp":"2025-09-08 11:16:30"}
+{"averageQuality":0,"level":"info","message":"Knowledge Base Statistics:","published":5,"timestamp":"2025-09-08 11:16:30","total":5,"types":[{"_id":"product_info","count":5}]}
+{"level":"info","message":"Initializing Improved Search Service...","timestamp":"2025-09-08 11:16:30"}
+{"level":"info","message":"Azure OpenAI client initialized","timestamp":"2025-09-08 11:16:30"}
+{"level":"info","message":"Improved Search Service initialized successfully","timestamp":"2025-09-08 11:16:30"}
+{"level":"info","message":"Services initialized successfully","timestamp":"2025-09-08 11:16:30"}
+{"collections":["KnowledgeBaseSnapshots","knowledge_base","KnowledgeBaseCurrentState","KnowledgeBaseLongTermHistory","KnowledgeBaseShortTermHistory","system.buckets.KnowledgeBaseShortTermHistory","SearchMetrics","system.buckets.SearchMetrics","system.views","KnowledgeBase","products","KnowledgeBaseMetrics","system.buckets.KnowledgeBaseMetrics","customer_preferences","AdhesivePDSDocumentMaster","AESearchDatabase","DataChangeLog","MaintenanceReports","KnowledgeBaseSearchCache","CustomerPreferences"],"dataSize":2480980,"database":"PDSAdhesiveSearch","documents":483,"indexes":105,"level":"info","message":"Database statistics:","timestamp":"2025-09-08 11:16:30"}
+{"level":"info","message":"\n        ========================================\n        🚀 Server is running!\n        ========================================\n        📍 Environment: development\n        🌐 URL: http://localhost:3000\n        📚 API Docs: http://localhost:3000/docs\n        🔍 Knowledge Base: /api/kb/v1\n        🔎 Search API: /api/v1\n        ========================================\n      ","timestamp":"2025-09-08 11:16:30"}
+{"level":"error","message":"{\"message\":\"Not Found - /api/kb/v1/search?q=epoxy\",\"stack\":\"Error: Not Found - /api/kb/v1/search?q=epoxy\\n    at notFound (file:///Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/src/middleware/errorHandler.js:14:17)\\n    at Layer.handle [as handle_request] (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/layer.js:95:5)\\n    at trim_prefix (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:328:13)\\n    at /Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:286:9\\n    at Function.process_params (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:346:12)\\n    at next (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:280:10)\\n    at /Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:646:15\\n    at next (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:265:14)\\n    at Function.handle (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:175:3)\\n    at router (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:47:12)\",\"timestamp\":\"2025-09-08T15:16:51.878Z\",\"request\":{\"method\":\"GET\",\"url\":\"/api/kb/v1/search?q=epoxy\",\"ip\":\"::1\"}}","timestamp":"2025-09-08 11:16:51"}
+{"level":"error","message":"{\"message\":\"Not Found - /api/v1/search?q=epoxy\",\"stack\":\"Error: Not Found - /api/v1/search?q=epoxy\\n    at notFound (file:///Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/src/middleware/errorHandler.js:14:17)\\n    at Layer.handle [as handle_request] (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/layer.js:95:5)\\n    at trim_prefix (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:328:13)\\n    at /Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:286:9\\n    at Function.process_params (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:346:12)\\n    at next (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:280:10)\\n    at /Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:646:15\\n    at next (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:265:14)\\n    at Function.handle (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:175:3)\\n    at router (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:47:12)\",\"timestamp\":\"2025-09-08T15:16:57.114Z\",\"request\":{\"method\":\"GET\",\"url\":\"/api/v1/search?q=epoxy\",\"ip\":\"::1\"}}","timestamp":"2025-09-08 11:16:57"}
+{"level":"error","message":"{\"message\":\"Not Found - /stats\",\"stack\":\"Error: Not Found - /stats\\n    at notFound (file:///Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/src/middleware/errorHandler.js:14:17)\\n    at Layer.handle [as handle_request] (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/layer.js:95:5)\\n    at trim_prefix (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:328:13)\\n    at /Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:286:9\\n    at Function.process_params (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:346:12)\\n    at next (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:280:10)\\n    at logger (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/morgan/index.js:144:5)\\n    at Layer.handle [as handle_request] (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/layer.js:95:5)\\n    at trim_prefix (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:328:13)\\n    at /Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:286:9\",\"timestamp\":\"2025-09-08T15:17:08.355Z\",\"request\":{\"method\":\"GET\",\"url\":\"/stats\",\"ip\":\"::1\"}}","timestamp":"2025-09-08 11:17:08"}
+{"level":"info","message":"SIGTERM signal received: closing HTTP server","timestamp":"2025-09-08 11:47:39"}
+{"level":"info","message":"Starting PDS Adhesive Intelligent Search Platform...","timestamp":"2025-09-08 11:47:42"}
+{"level":"info","message":"Connecting to MongoDB Atlas...","timestamp":"2025-09-08 11:47:42"}
+{"level":"info","message":"Mongoose connected to MongoDB","timestamp":"2025-09-08 11:47:43"}
+{"level":"info","message":"Native MongoDB client connected","timestamp":"2025-09-08 11:47:43"}
+{"level":"info","message":"MongoDB Atlas connected successfully","timestamp":"2025-09-08 11:47:43"}
+{"level":"info","message":"Database connection test successful","timestamp":"2025-09-08 11:47:43"}
+{"level":"info","message":"Creating database indexes...","timestamp":"2025-09-08 11:47:43"}
+{"level":"info","message":"Database indexes created successfully","timestamp":"2025-09-08 11:47:43"}
+{"level":"info","message":"Initializing services...","timestamp":"2025-09-08 11:47:43"}
+{"level":"info","message":"Initializing Knowledge Base Service...","timestamp":"2025-09-08 11:47:43"}
+{"level":"info","message":"Knowledge Base indexes ensured","timestamp":"2025-09-08 11:47:44"}
+{"level":"info","message":"Knowledge Base Service initialized successfully","timestamp":"2025-09-08 11:47:44"}
+{"averageQuality":0,"level":"info","message":"Knowledge Base Statistics:","published":5,"timestamp":"2025-09-08 11:47:44","total":5,"types":[{"_id":"product_info","count":5}]}
+{"level":"info","message":"Initializing Improved Search Service...","timestamp":"2025-09-08 11:47:44"}
+{"level":"info","message":"Azure OpenAI client initialized","timestamp":"2025-09-08 11:47:44"}
+{"level":"info","message":"Improved Search Service initialized successfully","timestamp":"2025-09-08 11:47:44"}
+{"level":"info","message":"Services initialized successfully","timestamp":"2025-09-08 11:47:44"}
+{"collections":["KnowledgeBaseSnapshots","knowledge_base","KnowledgeBaseCurrentState","KnowledgeBaseLongTermHistory","KnowledgeBaseShortTermHistory","system.buckets.KnowledgeBaseShortTermHistory","SearchMetrics","system.buckets.SearchMetrics","system.views","KnowledgeBase","products","KnowledgeBaseMetrics","system.buckets.KnowledgeBaseMetrics","customer_preferences","AdhesivePDSDocumentMaster","AESearchDatabase","DataChangeLog","MaintenanceReports","KnowledgeBaseSearchCache","CustomerPreferences"],"dataSize":2482600,"database":"PDSAdhesiveSearch","documents":488,"indexes":105,"level":"info","message":"Database statistics:","timestamp":"2025-09-08 11:47:44"}
+{"level":"info","message":"\n        ========================================\n        🚀 Server is running!\n        ========================================\n        📍 Environment: development\n        🌐 URL: http://localhost:3000\n        📚 API Docs: http://localhost:3000/docs\n        🔍 Knowledge Base: /api/kb/v1\n        🔎 Search API: /api/v1\n        ========================================\n      ","timestamp":"2025-09-08 11:47:44"}
+{"level":"info","message":"KB Search: \"epoxy\"","timestamp":"2025-09-08 11:48:00"}
+{"level":"error","message":"{\"message\":\"Not Found - /api/kb/v1/extract\",\"stack\":\"Error: Not Found - /api/kb/v1/extract\\n    at notFound (file:///Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/src/middleware/errorHandler.js:14:17)\\n    at Layer.handle [as handle_request] (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/layer.js:95:5)\\n    at trim_prefix (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:328:13)\\n    at /Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:286:9\\n    at Function.process_params (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:346:12)\\n    at next (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:280:10)\\n    at /Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:646:15\\n    at next (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:265:14)\\n    at Function.handle (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:175:3)\\n    at router (/Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/node_modules/express/lib/router/index.js:47:12)\",\"timestamp\":\"2025-09-08T15:49:37.849Z\",\"request\":{\"method\":\"POST\",\"url\":\"/api/kb/v1/extract\",\"ip\":\"::1\"}}","timestamp":"2025-09-08 11:49:37"}
+{"level":"info","message":"Starting short-term history archival...","timestamp":"2025-09-08 11:49:50"}
+{"level":"info","message":"Creating weekly snapshot of knowledge base...","timestamp":"2025-09-08 11:49:50"}
+{"level":"info","message":"KB Search: \"adhesive\"","timestamp":"2025-09-08 11:50:02"}
+{"level":"info","message":"KB Search: \"adhesive\"","timestamp":"2025-09-08 11:50:13"}
+{"level":"info","message":"Returning cached search results","timestamp":"2025-09-08 11:50:14"}
+{"level":"info","message":"Auto-refresh service connected to MongoDB","timestamp":"2025-09-08 11:55:20"}

@@ -1,0 +1,257 @@
+
+> adhesive-search-platform@1.0.0 test
+> jest --coverage
+
+FAIL tests/integration/api.test.js
+  ● Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/src/config/index.js:11
+    const _filename = (0, _url.fileURLToPath)(import.meta.url);
+                                                     ^^^^
+
+    SyntaxError: Cannot use 'import.meta' outside a module
+
+       6 | import rateLimit from 'express-rate-limit';
+       7 |
+    >  8 | import config from './config/index.js';
+         | ^
+       9 | import logger from './utils/logger.js';
+      10 | import { errorHandler, notFound } from './middleware/errorHandler.js';
+      11 | import { sanitizeInput } from './middleware/validation.js';
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1505:14)
+      at Object.require (src/app.js:8:1)
+      at Object.require (tests/integration/api.test.js:3:1)
+
+FAIL tests/unit/services/KnowledgeBaseService.test.js
+  ● Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /Volumes/Data/PDS_ADHESIVE_DB_Inteligent_Search/adhesive-search-platform/src/config/index.js:11
+    const _filename = (0, _url.fileURLToPath)(import.meta.url);
+                                                     ^^^^
+
+    SyntaxError: Cannot use 'import.meta' outside a module
+
+      3 | import logger from '../utils/logger.js';
+      4 | import dbConnection from '../database/connection.js';
+    > 5 | import config from '../config/index.js';
+        | ^
+      6 |
+      7 | class KnowledgeBaseService {
+      8 |   constructor() {
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1505:14)
+      at Object.require (src/services/KnowledgeBaseService.js:5:1)
+      at Object.require (tests/unit/services/KnowledgeBaseService.test.js:2:1)
+
+(node:41088) [MONGOOSE] Warning: Duplicate schema index on {"applications.industries":1} found. This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41088) [MONGOOSE] Warning: Duplicate schema index on {"compliance.environmental":1} found. This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+(node:41087) [MONGOOSE] Warning: Duplicate schema index on {"applications.industries":1} found. This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41087) [MONGOOSE] Warning: Duplicate schema index on {"compliance.environmental":1} found. This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+FAIL tests/unit/models/Product.test.js
+  Product Model
+    Product Creation
+      ✕ should create a product with valid data (15 ms)
+      ✓ should require productId (3 ms)
+      ✕ should enforce unique productId (2 ms)
+    Data Quality Calculation
+      ✕ should calculate data quality score (2 ms)
+    Search by Specifications
+      ✕ should find products by temperature range (5 ms)
+      ✕ should find products by tensile strength (4 ms)
+      ✕ should find products by cure time (3 ms)
+    Virtual Properties
+      ✓ should generate fullName virtual property (1 ms)
+
+  ● Product Model › Product Creation › should create a product with valid data
+
+    TypeError: Cannot read properties of undefined (reading 'field_coverage')
+
+      331 |   });
+      332 |   
+    > 333 |   this.data_quality.field_coverage.critical_fields = criticalComplete / requiredFields.length;
+          |                     ^
+      334 |   this.data_quality.field_coverage.optional_fields = optionalComplete / optionalFields.length;
+      335 |   this.data_quality.completeness_score = 
+      336 |     (this.data_quality.field_coverage.critical_fields * 0.7) + 
+
+      at model.field_coverage [as calculateDataQuality] (src/models/Product.js:333:21)
+      at model.calculateDataQuality (src/models/Product.js:367:8)
+      at callMiddlewareFunction (node_modules/kareem/index.js:628:27)
+      at model.next (node_modules/kareem/index.js:93:7)
+      at _next (node_modules/kareem/index.js:146:10)
+      at node_modules/kareem/index.js:653:30
+
+  ● Product Model › Product Creation › should enforce unique productId
+
+    TypeError: Cannot read properties of undefined (reading 'field_coverage')
+
+      331 |   });
+      332 |   
+    > 333 |   this.data_quality.field_coverage.critical_fields = criticalComplete / requiredFields.length;
+          |                     ^
+      334 |   this.data_quality.field_coverage.optional_fields = optionalComplete / optionalFields.length;
+      335 |   this.data_quality.completeness_score = 
+      336 |     (this.data_quality.field_coverage.critical_fields * 0.7) + 
+
+      at model.field_coverage [as calculateDataQuality] (src/models/Product.js:333:21)
+      at model.calculateDataQuality (src/models/Product.js:367:8)
+      at callMiddlewareFunction (node_modules/kareem/index.js:628:27)
+      at model.next (node_modules/kareem/index.js:93:7)
+      at _next (node_modules/kareem/index.js:146:10)
+      at node_modules/kareem/index.js:653:30
+
+  ● Product Model › Data Quality Calculation › should calculate data quality score
+
+    TypeError: Cannot read properties of undefined (reading 'field_coverage')
+
+      331 |   });
+      332 |   
+    > 333 |   this.data_quality.field_coverage.critical_fields = criticalComplete / requiredFields.length;
+          |                     ^
+      334 |   this.data_quality.field_coverage.optional_fields = optionalComplete / optionalFields.length;
+      335 |   this.data_quality.completeness_score = 
+      336 |     (this.data_quality.field_coverage.critical_fields * 0.7) + 
+
+      at model.field_coverage [as calculateDataQuality] (src/models/Product.js:333:21)
+      at Object.calculateDataQuality (tests/unit/models/Product.test.js:89:15)
+
+  ● Product Model › Search by Specifications › should find products by temperature range
+
+    TypeError: Cannot read properties of undefined (reading 'field_coverage')
+
+      331 |   });
+      332 |   
+    > 333 |   this.data_quality.field_coverage.critical_fields = criticalComplete / requiredFields.length;
+          |                     ^
+      334 |   this.data_quality.field_coverage.optional_fields = optionalComplete / optionalFields.length;
+      335 |   this.data_quality.completeness_score = 
+      336 |     (this.data_quality.field_coverage.critical_fields * 0.7) + 
+
+      at model.field_coverage [as calculateDataQuality] (src/models/Product.js:333:21)
+      at model.calculateDataQuality (src/models/Product.js:367:8)
+      at callMiddlewareFunction (node_modules/kareem/index.js:628:27)
+      at model.next (node_modules/kareem/index.js:93:7)
+      at _next (node_modules/kareem/index.js:146:10)
+      at node_modules/kareem/index.js:653:30
+
+  ● Product Model › Search by Specifications › should find products by tensile strength
+
+    TypeError: Cannot read properties of undefined (reading 'field_coverage')
+
+      331 |   });
+      332 |   
+    > 333 |   this.data_quality.field_coverage.critical_fields = criticalComplete / requiredFields.length;
+          |                     ^
+      334 |   this.data_quality.field_coverage.optional_fields = optionalComplete / optionalFields.length;
+      335 |   this.data_quality.completeness_score = 
+      336 |     (this.data_quality.field_coverage.critical_fields * 0.7) + 
+
+      at model.field_coverage [as calculateDataQuality] (src/models/Product.js:333:21)
+      at model.calculateDataQuality (src/models/Product.js:367:8)
+      at callMiddlewareFunction (node_modules/kareem/index.js:628:27)
+      at model.next (node_modules/kareem/index.js:93:7)
+      at _next (node_modules/kareem/index.js:146:10)
+      at node_modules/kareem/index.js:653:30
+
+  ● Product Model › Search by Specifications › should find products by cure time
+
+    TypeError: Cannot read properties of undefined (reading 'field_coverage')
+
+      331 |   });
+      332 |   
+    > 333 |   this.data_quality.field_coverage.critical_fields = criticalComplete / requiredFields.length;
+          |                     ^
+      334 |   this.data_quality.field_coverage.optional_fields = optionalComplete / optionalFields.length;
+      335 |   this.data_quality.completeness_score = 
+      336 |     (this.data_quality.field_coverage.critical_fields * 0.7) + 
+
+      at model.field_coverage [as calculateDataQuality] (src/models/Product.js:333:21)
+      at model.calculateDataQuality (src/models/Product.js:367:8)
+      at callMiddlewareFunction (node_modules/kareem/index.js:628:27)
+      at model.next (node_modules/kareem/index.js:93:7)
+      at _next (node_modules/kareem/index.js:146:10)
+      at node_modules/kareem/index.js:653:30
+
+------------------------------|---------|----------|---------|---------|-------------------------
+File                          | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s       
+------------------------------|---------|----------|---------|---------|-------------------------
+All files                     |    3.02 |     0.77 |    3.16 |     2.9 |                         
+ src                          |       0 |        0 |       0 |       0 |                         
+  app.js                      |       0 |        0 |       0 |       0 | 18-135                  
+ src/controllers              |       0 |        0 |       0 |       0 |                         
+  knowledgeBase.controller.js |       0 |        0 |       0 |       0 | 9-183                   
+  search.controller.js        |       0 |        0 |       0 |       0 | 15-123                  
+ src/database                 |       0 |        0 |       0 |       0 |                         
+  connection.js               |       0 |        0 |       0 |       0 | 8-236                   
+ src/middleware               |       0 |        0 |       0 |       0 |                         
+  errorHandler.js             |       0 |        0 |       0 |       0 | 6-145                   
+  validation.js               |       0 |        0 |       0 |       0 | 6-254                   
+ src/models                   |   15.73 |        5 |   14.28 |   15.47 |                         
+  CustomerPreference.js       |       0 |        0 |       0 |       0 | 3-426                   
+  KnowledgeBase.js            |       0 |        0 |       0 |       0 | 3-355                   
+  Product.js                  |   65.11 |       25 |   83.33 |   63.41 | 334-339,344-362,368-369 
+ src/routes                   |       0 |      100 |       0 |       0 |                         
+  knowledgeBase.routes.js     |       0 |      100 |       0 |       0 | 6-106                   
+  search.routes.js            |       0 |      100 |     100 |       0 | 6-60                    
+ src/services                 |       0 |        0 |       0 |       0 |                         
+  KnowledgeBaseService.js     |       0 |        0 |       0 |       0 | 9-587                   
+  SearchService.js            |       0 |        0 |       0 |       0 | 11-664                  
+ src/utils                    |       0 |        0 |       0 |       0 |                         
+  logger.js                   |       0 |        0 |       0 |       0 | 6-188                   
+------------------------------|---------|----------|---------|---------|-------------------------
+Jest: "global" coverage threshold for statements (70%) not met: 3.02%
+Jest: "global" coverage threshold for branches (70%) not met: 0.77%
+Jest: "global" coverage threshold for lines (70%) not met: 2.9%
+Jest: "global" coverage threshold for functions (70%) not met: 3.16%
+Test Suites: 3 failed, 3 total
+Tests:       6 failed, 2 passed, 8 total
+Snapshots:   0 total
+Time:        2.255 s, estimated 3 s
+Ran all test suites.

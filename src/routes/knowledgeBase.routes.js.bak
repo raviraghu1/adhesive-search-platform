@@ -1,0 +1,112 @@
+import express from 'express';
+import knowledgeBaseController from '../controllers/knowledgeBase.controller.js';
+import { validateQuery, validateEntityId } from '../middleware/validation.js';
+import { asyncHandler } from '../middleware/errorHandler.js';
+
+const router = express.Router();
+
+/**
+ * @route   GET /api/kb/v1/health
+ * @desc    Health check for Knowledge Base service
+ * @access  Public
+ */
+router.get('/health', asyncHandler(async (req, res) => {
+  res.json({ 
+    status: 'healthy',
+    service: 'knowledge-base',
+    timestamp: new Date().toISOString(),
+  });
+}));
+
+/**
+ * @route   GET /api/kb/v1/query
+ * @desc    Query the knowledge base
+ * @access  Public
+ * @query   q - Query text
+ * @query   limit - Number of results (default: 10)
+ * @query   type - Entity type filter
+ */
+router.get('/query', 
+  validateQuery,
+  asyncHandler(knowledgeBaseController.query)
+);
+
+/**
+ * @route   GET /api/kb/v1/entity/:id
+ * @desc    Get specific knowledge entity
+ * @access  Public
+ */
+router.get('/entity/:id',
+  validateEntityId,
+  asyncHandler(knowledgeBaseController.getEntity)
+);
+
+/**
+ * @route   GET /api/kb/v1/search
+ * @desc    Search knowledge base with advanced options
+ * @access  Public
+ */
+router.post('/search',
+  asyncHandler(knowledgeBaseController.search)
+);
+
+/**
+ * @route   POST /api/kb/v1/extract
+ * @desc    Extract and build knowledge base from sources
+ * @access  Admin
+ */
+router.post('/extract',
+  // Add authentication middleware here
+  asyncHandler(knowledgeBaseController.extractAndBuild)
+);
+
+/**
+ * @route   GET /api/kb/v1/relationships/:id
+ * @desc    Get related entities
+ * @access  Public
+ */
+router.get('/relationships/:id',
+  validateEntityId,
+  asyncHandler(knowledgeBaseController.getRelatedEntities)
+);
+
+/**
+ * @route   GET /api/kb/v1/concepts/:concept
+ * @desc    Search by concept
+ * @access  Public
+ */
+router.get('/concepts/:concept',
+  asyncHandler(knowledgeBaseController.searchByConcept)
+);
+
+/**
+ * @route   GET /api/kb/v1/metrics
+ * @desc    Get knowledge base statistics
+ * @access  Public
+ */
+router.get('/metrics',
+  asyncHandler(knowledgeBaseController.getStatistics)
+);
+
+/**
+ * @route   POST /api/kb/v1/feedback/:id
+ * @desc    Add feedback to entity
+ * @access  Public
+ */
+router.post('/feedback/:id',
+  validateEntityId,
+  asyncHandler(knowledgeBaseController.addFeedback)
+);
+
+/**
+ * @route   PUT /api/kb/v1/quality/:id
+ * @desc    Update quality metrics
+ * @access  Admin
+ */
+router.put('/quality/:id',
+  validateEntityId,
+  // Add authentication middleware here
+  asyncHandler(knowledgeBaseController.updateQuality)
+);
+
+export default router;
