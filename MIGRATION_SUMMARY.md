@@ -13,12 +13,20 @@
 - **Name:** `PDSAdhesiveSearch`
 - **Status:** Active and configured in application
 - **Collections:**
-  - `AESearchDatabase` - Product catalog (migrated)
-  - `AdhesivePDSDocumentMaster` - Technical documents
+  - `AESearchDatabase` - Product catalog with 2,007 products from AEdatabase
+  - `AdhesivePDSDocumentMaster` - 443 technical documents with AE attributes
   - `PDSAdhesiveSearchCollection` - Search history
   - `CustomerPreferences` - User preferences
   - `KnowledgeBase` - Knowledge entities
   - Time-series collections for metrics
+
+### Source Database
+- **Name:** `PDSAdhesives`
+- **Status:** Read-only source for data import
+- **Collections Used:**
+  - `AEdatabase` - 2,858 product entries with X_NUMBERs and specifications
+  - `AdhesivePDSDocumentMaster` - 443 original documents
+- **Relationship:** AEdatabase.PdsId → AdhesivePDSDocumentMaster._id (Many-to-One)
 
 ## Configuration Updates
 

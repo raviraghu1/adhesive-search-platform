@@ -65,6 +65,23 @@ AI-powered intelligent search platform for adhesive products, leveraging MongoDB
    - `CustomerPreferences` - User preferences
    - `KnowledgeBase` - Knowledge entities
 
+## Data Import
+
+### Import AEdatabase Products and Documents
+```bash
+# Full unrestricted import (recommended)
+node scripts/import-ae-data-v2.js
+
+# Check database connections and verify data
+node scripts/check-ae-database.js
+```
+
+This will import:
+- **2,007 products** from AEdatabase (all PdsProducts and X_NUMBER entries)
+- **443 documents** from AdhesivePDSDocumentMaster
+- Establish many-to-one relationships via PdsId linking
+- Aggregate attributes from multiple AE entries per document
+
 ## Installation
 
 1. Clone the repository:
@@ -207,13 +224,30 @@ Content-Type: application/json
 
 ## Data Models
 
-### Product Schema
-- Product identification (ID, name, category)
-- Technical specifications (thermal, mechanical, chemical)
-- Substrate compatibility matrix
-- Applications and industries
-- Compliance and certifications
-- Search optimization data
+### Product Schema (AESearchDatabase)
+- Product identification (productId, name from PdsProduct or X_NUMBER)
+- Category classification (Epoxy, Specialty Adhesive, etc.)
+- Technical specifications aggregated from AEdatabase:
+  - Multiple X_NUMBER variants per product
+  - Viscosity, color, and cure mechanisms
+  - Features and applications
+- Relationships to technical documents via PdsId
+- Search optimization with keywords
+- Total: **2,007 products** (209 PdsProducts + 1,798 X_NUMBER products)
+
+### Document Schema (AdhesivePDSDocumentMaster)
+- Document identification and versioning
+- Many-to-One relationship with AEdatabase entries
+- Enriched with aggregated AE attributes when linked
+- Technical content and safety information
+- File paths and metadata
+- Total: **443 documents** (209 with AE data links)
+
+### AEdatabase Integration
+- **2,858 total entries** in source database
+- **Many-to-One relationship**: Multiple AE entries → Single document
+- Linking field: `AEdatabase.PdsId` → `AdhesivePDSDocumentMaster._id`
+- **1,893 unique X_NUMBERs** across all products
 
 ### Knowledge Base Schema
 - Entity types (product_info, technical_concept, FAQ, etc.)

@@ -1,4 +1,5 @@
 import searchService from '../services/SearchService.js';
+import aeSearchService from '../services/AESearchService.js';
 import logger from '../utils/logger.js';
 
 class SearchController {
@@ -28,7 +29,8 @@ class SearchController {
       userId: req.user?.id || null,
     };
     
-    const results = await searchService.searchProducts(query, options);
+    // Use AE Search Service for actual AESearchDatabase products
+    const results = await aeSearchService.searchProducts(query, options);
     
     res.json(results);
   }
@@ -43,7 +45,7 @@ class SearchController {
       return res.json({ suggestions: [] });
     }
     
-    const suggestions = await searchService.getAutofillSuggestions(q, parseInt(limit));
+    const suggestions = await aeSearchService.getAutofillSuggestions(q, parseInt(limit));
     
     res.json({ suggestions });
   }
